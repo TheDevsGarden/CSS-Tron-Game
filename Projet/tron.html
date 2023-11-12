@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jeu Tron</title>
+
+	<link rel="stylesheet" href="public/css/stylesheet.css">
+
+
+</head>
+<body>
+	
+	<div id="form-container" style="display:flex">
+		<form id="formConnexion" style="display:flex">
+			<input type="text" id="courriel" placeholder="courriel">
+			<input type="password" id="password" placeholder="mot de passe">
+			<input type="submit" id ="loginbutton" value="Se connecter">
+			
+		</form>
+
+	</div>
+
+
+	<div id="canvasContainer" style="display:none">
+
+		<div id="score">
+		<div id="counter1">Player 1 Score: </div>
+		<div id="counterRound">Round: </div>
+		<div id="counter2"> Player 2 Score: </div>
+		</div>
+
+		<div id="colorPicker">
+		
+		<form>
+		<input type="color" id="couleur1" name="couleur1" value="#ff0000">
+		<label for="couleur1">Choix de couleur</label>
+		</form>
+		
+		<form>
+		<input type="color" id="couleur" name="couleur" value="#00ff00">
+		<label for="couleur">Choix de couleur</label>
+		</form>
+
+		</div>
+
+		<div id="buttons-row">
+		<button id="resetRound">Reset Round</button>
+		<button id="pauseButton"></button>
+		<button id="resetButton">Reset Jeu</button>
+		</div>
+
+		<canvas id="myCanvas" width="750" height="750" style="border:5px solid #000000;"></canvas>
+
+	</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
+
